@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*fundo da tela */
+html{
+    width: 100vw;
+    height: 100vh; 
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+body{
+   
+   
+   
+    background: linear-gradient(rgba(17,17,17,0.7),rgba(20,20,20,1)), url(img6.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y:0px;
+}
+/* cabecalho, menu navegacao*/
+header{
+    width: 100%;
+    height: 7vh;
+    background: rgba(22, 22, 22, 0.2);
+
+}
+.menu{
+
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content:;
+    
+}
+.logo1{
+    font-size: 1.4rem;
+    letter-spacing: -0.1rem;
+}
+.logo2{
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: -0.1rem;
+    cursor: pointer;
+}
+.menu .list-itens{
+    display: flex;
+    list-style: none;
+    gap:10px;
+}
+.menu .list-itens a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ns ease-in;
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.menu .list-itens a:before{
+    content:' ';
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(49, 122, 182);
+    transition: all 1.5s ease;
+ }
+ .menu .list-itens a:hover:before{
+    width: 100%;
+ }
+ .menu .list-itens a:hover{
+    color: rgb(49, 122, 182);
+ }
+ /*´parte do meio*/
+ main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ /*conteudos de texto principal*/
+ .primary-text, .primary-text2{
+    width: 850px;
+    font-size: 3.6rem;
+    text-align: center;
+    
+    
+ }
+ .second-text{
+    margin-bottom: 7rem;
+
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+
+ }
+ /* botoes*/
+ .btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ }
+.btn button{
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    position: relative;
+    transition: 1.5s;
+}
+.btn button:before{
+    content: ' ';
+    bottom:0;
+    left:0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+    border-radius:10px;
+
+
+}
+.btn button:hover{
+    color:rgb(49, 122, 182) ;
+    border: 1px solid rgb(49, 122, 182) ;
+}
+ .btn button:hover:before{
+    width: 100%;
+   
+ 
+    
+
+}
