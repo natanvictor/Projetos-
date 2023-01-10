@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 238, 233);
+}
+.card {
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 40vw;
+    height: 70vh;
+    padding: 25px;
+    margin: 50px;
+    border: solid 1px rgba(17, 17, 17, 0.04);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px rgba(17, 17, 17, 0.4) ;
+}
+ img {
+    background-color: #fff;
+    height:30vh ;
+    width: 15vw;
+}
