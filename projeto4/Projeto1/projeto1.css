@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary-color: rgb(235, 230, 230) ;
+    --secundary-color: rgb(23, 17, 27);
+    --terceira-color: rgb(80, 60, 192);
+    
+
+    --trans-back-co: background-color .3s color .3s;
+    --trans-co: color .3s;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*, ::before,::after {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: black;
+    /background-color: var(--primary-color);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+img {max-width:100;vertical-align: middle;}
+ul {list-style: none;}
+strong {font-weight: 600;}
+h1,h2,h3,h4{font-weight: 500;line-height:normal;}
+h1{font-size: 2.5em;}
+h2 {font-size: 2em;}
+h3{font-size:1.5em;}
+h4{font-size:1em;}
+
+.container {
+    max-width:1100px;
+    padding: 0 2em;
+    margin: 0 auto;
+
+}
+.icons a{
+    position: relative;
+    font-size: 1.375em;
+    width:40px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+}
+header{
+    position: relative;
+}
+header::before{
+    content: '' ;
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height:1000px;
+    /*background-color: var(--secundary-color);*/ 
+    z-index: -1;
+}
+header :where(nav, .left, .right, ul, .icons) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header :where(.left, ul) {
+    flex-direction: ;
+}
+header nav {
+    padding: 1.5em 0;
+    line-height:2.5em;
+}
+header nav a {
+    padding:0 1em;
+    color: rgb(17, 16, 16);
+    transition: var(--trans-co);
+}
+
+header nav a:hover{
+    color:rgb(19, 165, 116);
+}
+header nav .logo a {
+    font-size: 1.6em;
+    font-weight: 500;
+    padding-left: 0;
+    display: flex;
+    color:rgb(4, 161, 65)
+}
+header nav .icart .number {
+    position: absolute;
+    top:0;
+    right:0;
+    font-size:12px;
+    width:16px;
+    height:16px;
+    color: rgb(204, 211, 224);
+    background-color: rgb(16, 139, 129);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+
+
+}
