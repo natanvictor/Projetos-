@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 :root {
-    --primary-color: rgb(235, 230, 230) ;
+    --primary-color: rgb(252, 252, 252) ;
     --secundary-color: rgb(23, 17, 27);
     --terceira-color: rgb(80, 60, 192);
     
@@ -23,7 +23,7 @@ body{
     font-weight: 400;
     line-height: 1.8;
     color: black;
-    /background-color: var(--primary-color);
+    background-color: var(--primary-color);
 }
 a {
     text-decoration: none;
@@ -31,13 +31,13 @@ a {
     -webkit-tap-highlight-color: transparent;
 }
 img {max-width:100;vertical-align: middle;}
-ul {list-style: none;}
+ul {list-style: none}
 strong {font-weight: 600;}
-h1,h2,h3,h4{font-weight: 500;line-height:normal;}
-h1{font-size: 2.5em;}
-h2 {font-size: 2em;}
-h3{font-size:1.5em;}
-h4{font-size:1em;}
+h1,h2,h3,h4 {font-weight: 500;line-height: normal;}
+h1 {font-size: 2.5em}
+h2 {font-size: 2em}
+h3 {font-size:1.5em}
+h4 {font-size:1em}
 
 .container {
     max-width:1100px;
@@ -58,8 +58,8 @@ header{
 }
 header::before{
     content: '' ;
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
     left: 0;
     width:100%;
     height:1000px;
@@ -72,7 +72,7 @@ header :where(nav, .left, .right, ul, .icons) {
     justify-content: space-between;
 }
 header :where(.left, ul) {
-    flex-direction: ;
+    flex-direction: column ;
 }
 header nav {
     padding: 1.5em 0;
@@ -80,19 +80,19 @@ header nav {
 }
 header nav a {
     padding:0 1em;
-    color: rgb(17, 16, 16);
+    color: rgb(17, 17, 17);
     transition: var(--trans-co);
 }
 
 header nav a:hover{
-    color:rgb(19, 165, 116);
+    color:rgb(13, 138, 65);
 }
 header nav .logo a {
     font-size: 1.6em;
     font-weight: 500;
     padding-left: 0;
     display: flex;
-    color:rgb(4, 161, 65)
+    color:rgb(4, 143, 57)
 }
 header nav .icart .number {
     position: absolute;
@@ -101,7 +101,7 @@ header nav .icart .number {
     font-size:12px;
     width:16px;
     height:16px;
-    color: rgb(204, 211, 224);
+    color: rgb(247, 249, 250);
     background-color: rgb(16, 139, 129);
     display: flex;
     align-items: center;
@@ -110,3 +110,54 @@ header nav .icart .number {
 
 
 }
+
+header nav .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+    width: 80%;
+    padding: 2em;
+    background-color: rgb(56, 55, 56);
+    z-index: 1000;
+    
+}
+header nav .menu ul {
+    align-items: flex-start;
+    line-height: 3em;
+}
+header nav .menu ul li a {
+    font-size: 1.5em;
+    color: #fff;
+}
+header nav .menu ul li a:hover {
+    color: rgba(94, 163, 228, 0.685);
+}
+@media screen and (min-width:768px) {
+    .mobile-only {
+        display: none;
+       
+    }
+    header :where(.left, ul) {
+        flex-direction: row ;
+    }
+    header nav .logo a {
+        margin-right: 2em;
+    }
+    header nav .menu {
+        position: relative;
+        padding 0;
+        max-width: max-content;
+        background-color: transparent;
+    }
+    header nav .menu ul li a {
+        font-size: inherit;
+        color: rgb(17, 17, 17)
+    }
+    header nav .menu ul li a:hover {
+        color:rgb(4, 143, 57)
+    }
+}
+
