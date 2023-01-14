@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    
+    
+}
+body{
+    background-color: rgb(247, 248, 250);
+}
+header {
+    background-color: rgba(7, 138, 66, 0.897);
+    color: rgba(245, 245, 248, 0.89);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 20vh;
+
+}
+ul {
+    display: flex;
+    align-items: center;
+    
+}
+li{
+    list-style: none;
+    margin: 0px 10px;
+}
+a {
+    text-decoration: none;
+    padding: 10px ;
+    color:rgb(239, 240, 243) ;
+    font-size: 16px;
+    font-weight: 600;
+}
+.contatos{
+    margin-right: 20px;
+}
+.icone li{
+    padding: 10px;
+    font-size: 16px;
+    height: 16px;
+    width: 16px;
+}
+.caixa-pergunta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    
+}
+
+.caixa {
+    padding: 1px 3px;
+    margin: 10px;
+   
+    background-color: rgba(252, 253, 252, 0.767);
+    
+    
+    border: ;
+    box-sizing: border-box;
+    color:rgba(17, 17, 17, 0.829) ;
+    font-size: 16px;
+    font-weight: 600;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.resul{
+    margin-top: 40px;
+    color: rgb(25, 182, 91);
+    font-size: 24px;
+    font-weight: 700;
+}
+.botao1 {
+    padding: 6px 10px;
+    width: 50%;
+    color: rgb(25, 182, 91);
+    font-size: 14px;
+    font-weight: 700;
+    border: solid 0.5px rgb(25, 182, 91) ;
+    background-color: inherit;
+}
+
