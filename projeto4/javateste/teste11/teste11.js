@@ -30,6 +30,9 @@ function adicionar() {
     } else {
         window.alert('Valor invalido')
     }
+    // esse codigo abaixo é para apagar a lacuna do input
+    num.value=''
+    num.focus()
 }
 
 

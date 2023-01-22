@@ -1,0 +1,14 @@
+h2 {
+    height: 110px;
+    width: 200px;
+    background-color: #1f0c24fa;
+    color: rgb(55, 212, 121);
+    border: solid 0.1px rgb(16, 2, 29);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0px;
+    box-shadow: 2px 2px 2px 0.4px  rgba(0, 0, 0, 0.3) ;
+}
